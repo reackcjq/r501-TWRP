@@ -179,3 +179,8 @@ jobs:
       with:
         name: twrp_recovery
         path: out/target/product/**/recovery.img
+    - name: List output
+      run: |
+        find out/target -name "*.img" 2>/dev/null
+        find out/target -name "recovery*" 2>/dev/null
+        ls -la out/target/product/rk3566_r501/ 2>/dev/null
