@@ -178,7 +178,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: twrp_recovery
-        path: out/target/product/**/recovery.img
+        path: out/target/product/rk3566_r501/recovery.img
     - name: List output
       run: |
         find out/target -name "*.img" 2>/dev/null
